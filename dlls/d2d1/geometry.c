@@ -977,6 +977,7 @@ static void d2d_figure_cleanup(struct d2d_figure *figure)
     free(figure->original_bezier_controls);
     free(figure->bezier_controls);
     free(figure->vertices);
+    free(figure->vertex_types);
     memset(figure, 0, sizeof(*figure));
 }
 
